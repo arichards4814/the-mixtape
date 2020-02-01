@@ -1,0 +1,12 @@
+<h1>Create a New Mixtape</h1>
+<%= form_for @mixtape do |f| %>
+<%= f.label :title %>
+<%= f.text_field :title %>
+<%= f.label :message %>
+<%= f.text_field :message %>
+<%= f.label :img_url %>
+<%= f.text_field :img_url %>
+<%= f.label :pattern %>
+<%= f.number_field :pattern %>
+<%= f.submit %>
+<% end %> 

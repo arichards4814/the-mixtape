@@ -1,0 +1,11 @@
+<h1>Mixtapes</h1> 
+<div class="alert alert-primary" role="alert">
+  If this looks nice... bootstrap is working.
+</div>
+<h3><%= link_to "Create New", new_mixtape_path  %><h3>
+<p>Here's a list of mixtapes!</p>
+
+<% @mixtapes.each do |mixtape|%>
+<h2><%= mixtape.title%></h2>
+<h3><%= link_to "Go to Page", mixtape_path(mixtape.id)  %><h3>
+<% end %>
